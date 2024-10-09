@@ -26,6 +26,30 @@ ETL script on 'etl_process.py'
 6. **Pixel Spacing**:  
    Filter for rows where `PixelSpacing <= 0.55`.
 
+## ETL Output
+
+The ETl script generates 'transformed_inventory_data.csv', here a summary:
+
+Total number of patients: 305
+
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 699 entries, 1 to 8407
+Data columns (total 10 columns):
+ #   Column                   Non-Null Count  Dtype  
+---  ------                   --------------  -----  
+ 0   PatientID                699 non-null    object 
+ 1   StudyInstanceUID         699 non-null    object 
+ 2   SeriesInstanceUID        699 non-null    object 
+ 3   StudyDescription         699 non-null    object 
+ 4   SeriesDescription        699 non-null    object 
+ 5   PixelSpacing             699 non-null    object 
+ 6   SliceThickness           699 non-null    float64
+ 7   ConvolutionKernel        691 non-null    object 
+ 8   ImageOrientationPatient  699 non-null    object 
+ 9   Modality                 699 non-null    object 
+dtypes: float64(1), object(9)
+memory usage: 60.1+ KB
+
 ## Instructions to use ETL script
 To use ETL 
 1. Make sure you have the required CSV files in your data/ directory (or adjust the file paths accordingly).
