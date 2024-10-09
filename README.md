@@ -50,6 +50,15 @@ Data columns (total 10 columns):
 dtypes: float64(1), object(9)
 memory usage: 60.1+ KB
 
+logging information example:
+
+2024-10-09 19:50:04,696 - INFO - Extracting data from CSV file.
+2024-10-09 19:50:04,836 - INFO - Data extraction complete. Rows: 8454, Columns: 206
+2024-10-09 19:50:04,837 - INFO - Starting data transformation.
+2024-10-09 19:50:04,874 - INFO - Data transformation complete. Rows after transformation: 699
+2024-10-09 19:50:04,875 - INFO - Loading data to data/transformed_inventory_data.csv.
+2024-10-09 19:50:04,882 - INFO - Data loading complete.
+
 ## Instructions to use ETL script
 To use ETL 
 1. Make sure you have the required CSV files in your data/ directory (or adjust the file paths accordingly).
