@@ -37,3 +37,36 @@ The script will extract, transform, and load the data, logging each step and sav
 # Analysis task 2
 
 Analysis and Filter criteria analyzed on 'Carlos_Gil_Data_Specialist_Methinks_Challenge.ipynb'
+
+1. Compute AUROC for Model_1 and Model_2, and select the one with the higher AUROC 
+
+Best model: Model_1, 
+AUROC Model_1: 0.5096153846153846 
+AUROC Model_2: 0.34134615384615385 
+
+2. Compute sensitivity and specificity for thresholds [0.3, 0.5, 0.7, 0.9] 
+
+Threshold: 0.3, Sensitivity: 0.67, Specificity: 0.42
+Threshold: 0.5, Sensitivity: 0.42, Specificity: 0.54
+Threshold: 0.7, Sensitivity: 0.25, Specificity: 0.81
+Threshold: 0.9, Sensitivity: 0.12, Specificity: 0.92
+Selected threshold: 0.7 
+
+3. Select False Positive patients with the selected threshold 
+
+False Positive patients: ['X99', 'G30', 'K91', 'E139', 'G66']
+
+4. Compute the image histogram. You should see that two patients have something weird in the histogram, identify them.
+
+![image](https://github.com/user-attachments/assets/3beeac15-c334-4927-8999-9ec6ffe9c035)
+Patients with abnormal Histogram are E139 and G30.
+
+5. Visualize the masked images for abnormal patients
+
+![image](https://github.com/user-attachments/assets/7faa40f6-4966-4701-923e-6eacc0a12115)
+Analysis for Patient E139:
+Scan is not valid as there is no information for half of the image
+
+![image](https://github.com/user-attachments/assets/e2f29ed0-6a4a-43c4-973d-bfd81aa6b95a)
+Analysis for Patient G30:
+The scan is fine but the pixel intensity is too bright - over the range - so needs to be modified
