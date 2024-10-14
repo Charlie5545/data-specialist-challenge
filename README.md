@@ -69,9 +69,13 @@ AUROC Model_2: 0.34134615384615385
 2. Compute sensitivity and specificity for thresholds [0.3, 0.5, 0.7, 0.9] 
 
 Threshold: 0.3, Sensitivity: 0.67, Specificity: 0.42
+
 Threshold: 0.5, Sensitivity: 0.42, Specificity: 0.54
+
 Threshold: 0.7, Sensitivity: 0.25, Specificity: 0.81
+
 Threshold: 0.9, Sensitivity: 0.12, Specificity: 0.92
+
 Selected threshold: 0.7 
 
 3. Select False Positive patients with the selected threshold 
