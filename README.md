@@ -63,7 +63,9 @@ Analysis and Filter criteria analyzed on 'Carlos_Gil_Data_Specialist_Methinks_Ch
 1. Compute AUROC for Model_1 and Model_2, and select the one with the higher AUROC 
 
 Best model: Model_1, 
+
 AUROC Model_1: 0.5096153846153846 
+
 AUROC Model_2: 0.34134615384615385 
 
 2. Compute sensitivity and specificity for thresholds [0.3, 0.5, 0.7, 0.9] 
