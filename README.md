@@ -1,5 +1,5 @@
-# data-specialist-methinks-challenge
-Data Specialist - Methinks Challenge
+# data-specialist-challenge
+Data Specialist - Challenge
 
 # Cleaning and Inventory task 1
 
